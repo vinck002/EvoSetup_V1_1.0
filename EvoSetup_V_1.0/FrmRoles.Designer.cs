@@ -35,10 +35,10 @@ namespace EvoSetup_V_1._0
             this.btnA = new Telerik.WinControls.UI.RadButton();
             this.txtCode = new Telerik.WinControls.UI.RadTextBox();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
-            this.cbGroupRole = new System.Windows.Forms.ComboBox();
             this.radLabel16 = new Telerik.WinControls.UI.RadLabel();
             this.btnNew = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.cbGroupRole = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Description)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescription)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -50,8 +50,13 @@ namespace EvoSetup_V_1._0
             // 
             // Description
             // 
+            this.Description.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Description.Location = new System.Drawing.Point(8, 45);
             this.Description.Name = "Description";
+            // 
+            // 
+            // 
+            this.Description.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 100, 18);
             this.Description.Size = new System.Drawing.Size(63, 18);
             this.Description.TabIndex = 1011;
             this.Description.Text = "Description";
@@ -61,6 +66,11 @@ namespace EvoSetup_V_1._0
             this.txtDescription.BackColor = System.Drawing.Color.White;
             this.txtDescription.Location = new System.Drawing.Point(77, 44);
             this.txtDescription.Name = "txtDescription";
+            // 
+            // 
+            // 
+            this.txtDescription.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 100, 20);
+            this.txtDescription.RootElement.StretchVertically = true;
             this.txtDescription.Size = new System.Drawing.Size(242, 20);
             this.txtDescription.TabIndex = 2;
             this.txtDescription.Tag = "1";
@@ -68,8 +78,13 @@ namespace EvoSetup_V_1._0
             // btnExit
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnExit.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnExit.Location = new System.Drawing.Point(221, 104);
             this.btnExit.Name = "btnExit";
+            // 
+            // 
+            // 
+            this.btnExit.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 110, 24);
             this.btnExit.Size = new System.Drawing.Size(98, 24);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Exit";
@@ -78,8 +93,13 @@ namespace EvoSetup_V_1._0
             // btnA
             // 
             this.btnA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnA.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnA.Location = new System.Drawing.Point(104, 104);
             this.btnA.Name = "btnA";
+            // 
+            // 
+            // 
+            this.btnA.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 110, 24);
             this.btnA.Size = new System.Drawing.Size(98, 24);
             this.btnA.TabIndex = 4;
             this.btnA.Text = "OK";
@@ -87,35 +107,41 @@ namespace EvoSetup_V_1._0
             // 
             // txtCode
             // 
+            this.txtCode.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtCode.Location = new System.Drawing.Point(77, 20);
             this.txtCode.MaxLength = 4;
             this.txtCode.Name = "txtCode";
+            // 
+            // 
+            // 
+            this.txtCode.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 100, 20);
+            this.txtCode.RootElement.StretchVertically = true;
             this.txtCode.Size = new System.Drawing.Size(98, 20);
             this.txtCode.TabIndex = 1;
             this.txtCode.Tag = "1";
             // 
             // radLabel1
             // 
+            this.radLabel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.radLabel1.Location = new System.Drawing.Point(39, 22);
             this.radLabel1.Name = "radLabel1";
+            // 
+            // 
+            // 
+            this.radLabel1.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 100, 18);
             this.radLabel1.Size = new System.Drawing.Size(32, 18);
             this.radLabel1.TabIndex = 1013;
             this.radLabel1.Text = "Code";
             // 
-            // cbGroupRole
-            // 
-            this.cbGroupRole.FormattingEnabled = true;
-            this.cbGroupRole.ItemHeight = 13;
-            this.cbGroupRole.Location = new System.Drawing.Point(77, 68);
-            this.cbGroupRole.Name = "cbGroupRole";
-            this.cbGroupRole.Size = new System.Drawing.Size(241, 21);
-            this.cbGroupRole.TabIndex = 3;
-            this.cbGroupRole.Tag = "";
-            // 
             // radLabel16
             // 
+            this.radLabel16.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.radLabel16.Location = new System.Drawing.Point(33, 71);
             this.radLabel16.Name = "radLabel16";
+            // 
+            // 
+            // 
+            this.radLabel16.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 100, 18);
             this.radLabel16.Size = new System.Drawing.Size(38, 18);
             this.radLabel16.TabIndex = 1015;
             this.radLabel16.Text = "Group";
@@ -149,6 +175,17 @@ namespace EvoSetup_V_1._0
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Visible = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // cbGroupRole
+            // 
+            this.cbGroupRole.FormattingEnabled = true;
+            this.cbGroupRole.ItemHeight = 13;
+            this.cbGroupRole.Location = new System.Drawing.Point(77, 68);
+            this.cbGroupRole.Name = "cbGroupRole";
+            this.cbGroupRole.Size = new System.Drawing.Size(241, 21);
+            this.cbGroupRole.TabIndex = 3;
+            this.cbGroupRole.Tag = "";
+            this.cbGroupRole.TextChanged += new System.EventHandler(this.cbGroupRole_TextChanged);
             // 
             // FrmRoles
             // 
@@ -193,7 +230,7 @@ namespace EvoSetup_V_1._0
         private Telerik.WinControls.UI.RadButton btnA;
         private Telerik.WinControls.UI.RadTextBox txtCode;
         private Telerik.WinControls.UI.RadLabel radLabel1;
-        private System.Windows.Forms.ComboBox cbGroupRole;
         private Telerik.WinControls.UI.RadLabel radLabel16;
+        private System.Windows.Forms.ComboBox cbGroupRole;
     }
 }

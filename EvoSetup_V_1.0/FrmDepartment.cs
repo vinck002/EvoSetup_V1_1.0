@@ -62,7 +62,7 @@ namespace EvoSetup_V_1._0
                                 Active =  0
 
                             };
-                            DataResult = ProcedureManager.proceduremanager(_department,1);
+                            DataResult = ProcedureManager.Departmentmanager(_department,1);
                             //DataHelpers.SqlData($"evo1_sp_DepartmentManager 0,'{_department.Description}', 0,1");
                             DataResult.PrimaryKey = new DataColumn[] { DataResult.Columns["DepartmentID"] };
                             FrmSearching = new FrmSearchinDepartments(this, DataResult);
@@ -92,7 +92,7 @@ namespace EvoSetup_V_1._0
 
                             };
                        
-                            if (ProcedureManager.proceduremanager(_Departement, 0).Rows[0]["result"] != null)
+                            if (ProcedureManager.Departmentmanager(_Departement, 0).Rows[0][0].ToString() != "0")
                             {
                                 MessageBox.Show("Done!");
                             }
@@ -137,7 +137,7 @@ namespace EvoSetup_V_1._0
                             if (DescriptionTemp != _Departement.Description)
                             {
                                 
-                                if (ProcedureManager.proceduremanager(_Departement, 0).Rows[0]["result"] != null)
+                                if (ProcedureManager.Departmentmanager(_Departement, 0).Rows[0][0].ToString() != "0")
                                 {
                                     MessageBox.Show("Done!");
                                 }

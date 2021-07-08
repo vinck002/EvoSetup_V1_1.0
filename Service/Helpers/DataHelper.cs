@@ -160,10 +160,12 @@ namespace Data.Helpers
                     DA.Fill(DT);
                     Cnn.Close();
                 }
-                catch (SqlException ex)
+                catch (/*SqlException ex*/ Exception)
                 {
-                    System.Windows.Forms.MessageBox.Show(ex.Message, "EVO", MessageBoxButtons.OK, MessageBoxIcon.Error);
-             
+                   
+                    //System.Windows.Forms.MessageBox.Show(ex.Message, "EVO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    DT.Columns.Add("result");
+                    DT.Rows.Add("0");
                 }
                
 

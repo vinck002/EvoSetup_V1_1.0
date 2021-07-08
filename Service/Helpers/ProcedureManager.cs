@@ -14,15 +14,28 @@ namespace Data.Helpers
     {
          
         
-       public static DataTable proceduremanager(DepartmentModel depart,int mod)
+       public static DataTable Departmentmanager(DepartmentModel model,int mod)
         {
             DataHelpers helper = new DataHelpers();
             DataTable dt = new DataTable();
 
-              dt = helper.SqlData($"evo1_sp_DepartmentManager {depart.DepartmentID},'{depart.Description}',{depart.Active},{mod}");
+              dt = helper.SqlData($"exec evo1_sp_DepartmentManager {model.DepartmentID},'{model.Description}',{model.Active},{mod}");
      
             return dt;
         }
 
+        public static DataTable Rolesmanager(RoleModel model, int mod)
+        {
+            DataHelpers helper = new DataHelpers();
+            DataTable dt = new DataTable();
+
+            dt = helper.SqlData($"exec Evo_sp_RoleManager {model.Id},'{model.Code}','{model.Descri}',{model.GrpRoleId},{mod}");
+
+            return dt;
+        }
+
     }
+
+
+    //Evo_sp_FillComboRole  Evo_sp_RoleManager
 }

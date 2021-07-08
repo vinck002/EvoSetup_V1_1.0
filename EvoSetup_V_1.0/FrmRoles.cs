@@ -18,7 +18,7 @@ namespace EvoSetup_V_1._0
         int Modul = 0;
         int isediting = 0;
         int isNew = 0;
-        int saving = 0;
+        int FlagStatus = 0;
         ControlShelper ControlHelper;
         RoleModel _Role;
         DataHelpers DataHelpers;
@@ -80,7 +80,7 @@ namespace EvoSetup_V_1._0
             if (Modul == 0)
             {
 
-                saving = 1;
+                FlagStatus = 1;
                 Modul = 1;
                 cbGroupRole.SelectedIndex = -1;
 
@@ -105,7 +105,7 @@ namespace EvoSetup_V_1._0
 
                             FHelper.CambiarColoresCampos(0, this, null);
                             isNew = 0;
-                            saving = 1;
+                            FlagStatus = 1;
 
                         }
                         else if (dialogResult == DialogResult.No)
@@ -132,7 +132,7 @@ namespace EvoSetup_V_1._0
                 {
                     btnSearch.BackColor = Color.Transparent;
                     FHelper.CambiarColoresCampos(1, this, null);
-                    saving = 2;
+                    FlagStatus = 2;
                     btnA.Text = "Save";
 
                 }
@@ -140,7 +140,7 @@ namespace EvoSetup_V_1._0
                 {
                     FHelper.CambiarColoresCampos(1, this,null);
 
-                    saving = 0;
+                    FlagStatus = 0;
                     btnSearch.BackColor = Color.Transparent;
                     btnA.Text = "Ok";
 
@@ -161,7 +161,7 @@ namespace EvoSetup_V_1._0
             //{
             //    if (isNew == 1 || isediting == 1)
             //    {
-            //        saving = 2;
+            //        FlagStatus = 2;
             //    }
 
             //    btnA.PerformClick();
@@ -210,12 +210,12 @@ namespace EvoSetup_V_1._0
                 btnNew.BackColor = Color.Red;
                 isNew = 1;
                 btnA.Text = "Save";
-                saving = 2;
+                FlagStatus = 2;
                 FHelper.CambiarColoresCampos(1, this,null);
             }
             else
             {
-                saving = 0;
+                FlagStatus = 0;
                 btnNew.BackColor = Color.Transparent;
                 isNew = 0;
                 btnA.Text = "Ok";
@@ -239,7 +239,7 @@ namespace EvoSetup_V_1._0
 
             int contador = 0;
 
-            switch (saving)
+            switch (FlagStatus)
             {
                 case 1:
                     foreach (var item in this.Controls.OfType<RadTextBox>())
@@ -264,12 +264,13 @@ namespace EvoSetup_V_1._0
                             FrmSearchinRoles FrmSearching;
                             RoleModel _role = new RoleModel()
                             {
+                                Id = 0,
                                 Code = txtCode.Text,
                                 Descri = txtDescription.Text,
-                                GrpRole = cbGroupRole.Text
+                                GrpRoleId =  Convert.ToInt32(cbGroupRole.SelectedValue)
 
                             };
-                            DataResult = DataHelpers.SearchRoles(_role);
+                            DataResult = ProcedureManager.Rolesmanager(_role,1);
                             DataResult.PrimaryKey = new DataColumn[] { DataResult.Columns["Id"] };
                             FrmSearching = new FrmSearchinRoles(this, DataResult);
                             FrmSearching.ShowDialog();
@@ -292,22 +293,24 @@ namespace EvoSetup_V_1._0
                         {
                             _Role = new RoleModel
                             {
+                                Id = 0,
                                 Code = txtCode.Text,
                                 Descri = txtDescription.Text,
                                 GrpRoleId = Convert.ToInt32(cbGroupRole.SelectedValue) <= 0 ? 0 : Convert.ToInt32(cbGroupRole.SelectedValue)
                             };
-
-                            if (DataHelpers.RolesManagment(_Role))
-                            {
-                                
-                                LoadCombosBoxUser();
-                                MessageBox.Show("Done!");
-                                btnNew.PerformClick();
-                            }
-                            else
+                           ;
+                            //(DataHelpers.RolesManagment(_Role);
+                            if  (ProcedureManager.Rolesmanager(_Role, 0).Rows.Count > 0)
                             {
                                 MessageBox.Show("Code Allready Exist!");
                                 return;
+                                
+                            }
+                            else
+                            {
+                                LoadCombosBoxUser();
+                                MessageBox.Show("Done!");
+                                btnNew.PerformClick();
                             }
 
                         }
@@ -340,10 +343,16 @@ namespace EvoSetup_V_1._0
                                 if (dialogResult == DialogResult.Yes)
                                 {
 
-                                    if (DataHelpers.RolesManagment(_Role))
+                                    //if (DataHelpers.RolesManagment(_Role))
+                                    if (ProcedureManager.Rolesmanager(_Role, 0).Rows.Count > 0)
+                                    {
+                                        MessageBox.Show("Error!");
+                                    }
+                                    else
                                     {
                                         MessageBox.Show("Done!");
                                     }
+
 
                                     btnA.Text = "Ok";
 
@@ -365,7 +374,7 @@ namespace EvoSetup_V_1._0
 
                     }
                     isNew = 0;
-                    saving = 0;
+                    FlagStatus = 0;
 
                     break;
 
@@ -398,10 +407,8 @@ namespace EvoSetup_V_1._0
         {
             if (DataHelpers.Verificaconect())
             {
-                Dictionary<string, string> Data = new Dictionary<string, string>();
-                Data.Add("", "");
-
-                ComboRoles = DataHelpers.FillCombosRole();
+              
+                ComboRoles = DataHelpers.SqlData("Evo_sp_FillComboRole");
                 cbGroupRole.DisplayMember = "Descri";
                 cbGroupRole.ValueMember = "Id";
                 cbGroupRole.DataSource = ComboRoles;
@@ -414,7 +421,7 @@ namespace EvoSetup_V_1._0
         {
             if (isNew == 1 || isediting == 1)
             {
-                saving = 2;
+                FlagStatus = 2;
             }
 
             btnA.PerformClick();
@@ -451,6 +458,15 @@ namespace EvoSetup_V_1._0
 
                 this.SelectNextControl(ActiveControl, true, true, true, true);
 
+            }
+        }
+
+        private void cbGroupRole_TextChanged(object sender, EventArgs e)
+        {
+            if (cbGroupRole.Text.Length == 0)
+            {
+                cbGroupRole.SelectedIndex = -1;
+                cbGroupRole.Text = "Select";
             }
         }
     }
