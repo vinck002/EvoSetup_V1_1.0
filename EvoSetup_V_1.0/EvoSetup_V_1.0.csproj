@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{06A85474-54E7-4C8C-BE71-3FE19E7A157A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EvoSetup_V_1._0</RootNamespace>
+    <AssemblyName>EvoSetup_V_1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2020.3.915.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
+      <HintPath>bin\Debug\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2020.3.915.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2020.3.915.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2020.3.915.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCloneUserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCloneUserProfile.Designer.cs">
+      <DependentUpon>frmCloneUserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartment.Designer.cs">
+      <DependentUpon>FrmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoles.Designer.cs">
+      <DependentUpon>FrmRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearchinDepartments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchinDepartments.Designer.cs">
+      <DependentUpon>FrmSearchinDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearchingMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchingMenu.Designer.cs">
+      <DependentUpon>FrmSearchingMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearchingUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchingUser.Designer.cs">
+      <DependentUpon>FrmSearchingUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearchinRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchinRoles.Designer.cs">
+      <DependentUpon>FrmSearchinRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSpecialPermiByUserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSpecialPermiByUserProfile.Designer.cs">
+      <DependentUpon>FrmSpecialPermiByUserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSpecialPermit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSpecialPermit.Designer.cs">
+      <DependentUpon>FrmSpecialPermit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSpecialPermitByUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSpecialPermitByUser.Designer.cs">
+      <DependentUpon>FrmSpecialPermitByUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsers.Designer.cs">
+      <DependentUpon>FrmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCloneUserProfile.resx">
+      <DependentUpon>frmCloneUserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartment.resx">
+      <DependentUpon>FrmDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoles.resx">
+      <DependentUpon>FrmRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchinDepartments.resx">
+      <DependentUpon>FrmSearchinDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchingMenu.resx">
+      <DependentUpon>FrmSearchingMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchingUser.resx">
+      <DependentUpon>FrmSearchingUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchinRoles.resx">
+      <DependentUpon>FrmSearchinRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpecialPermiByUserProfile.resx">
+      <DependentUpon>FrmSpecialPermiByUserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpecialPermit.resx">
+      <DependentUpon>FrmSpecialPermit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpecialPermitByUser.resx">
+      <DependentUpon>FrmSpecialPermitByUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsers.resx">
+      <DependentUpon>FrmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_search_locate_6312.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\android-search_icon-icons.com_50501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seo-social-web-network-internet_340_icon-icons.com_61497.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seo-social-web-network-internet_340_icon-icons.com_61497.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmag_search_find_export_locate_5984.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486395885-plus_80605.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-black-symbol_icon-icons.com_73453.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_add_256_icon-icons.com_75994.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486485557-add-create-new-more-plus_81188.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486485588-add-create-new-math-sign-cross-plus_81186.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486485588-add-create-new-math-sign-cross-plus_81186.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486395885-plus_806051.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486485588-add-create-new-math-sign-cross-plus_811861.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_insert_add_new_icon_181537.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adduser_añadir_3553.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Service\Data.csproj">
+      <Project>{cb53f8c1-9d1f-4c3e-a98a-8cb196f75ed4}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486485588-add-create-new-math-sign-cross-plus_811862.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-add_114479.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-add_1144791.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ShouldAddDPIScalingManifest="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
