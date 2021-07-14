@@ -45,7 +45,7 @@ namespace Data.Helpers
             using (var cnn = _ConectionInstance.GetConection())
             {
                 cnn.Open();
-                string SPPendientes = "sp_Evo_SelectFillCombosUsers";
+                string SPPendientes = "sp_Evo_FillDataUsers";
                 SqlCommand cmd = new SqlCommand(SPPendientes, cnn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 //cmd.Parameters.AddWithValue("@User", 1);
