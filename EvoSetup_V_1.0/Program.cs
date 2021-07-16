@@ -16,7 +16,7 @@ namespace EvoSetup_V_1._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain());
+            Application.Run(new EVENTOS());
         }
     }
 }

@@ -24,3 +24,4 @@ C:\Users\LHVCDevelopment2\source\repos\EvoSetup_V_1.0\EvoSetup_V_1.0\obj\Debug\E
 C:\Users\LHVCDevelopment2\source\repos\EvoSetup_V_1.0\EvoSetup_V_1.0\obj\Debug\EvoSetup_V_1.0.csproj.CopyComplete
 C:\Users\LHVCDevelopment2\source\repos\EvoSetup_V_1.0\EvoSetup_V_1.0\obj\Debug\EvoSetup_V_1.0.exe
 C:\Users\LHVCDevelopment2\source\repos\EvoSetup_V_1.0\EvoSetup_V_1.0\obj\Debug\EvoSetup_V_1.0.pdb
+C:\Users\LHVCDevelopment2\source\repos\EvoSetup_V_1.0\EvoSetup_V_1.0\obj\Debug\EvoSetup_V_1._0.EVENTOS.resources

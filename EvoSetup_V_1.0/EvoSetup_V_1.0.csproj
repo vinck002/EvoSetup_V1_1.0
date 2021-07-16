@@ -54,6 +54,12 @@
     <Reference Include="TelerikCommon, Version=2020.3.915.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EVENTOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EVENTOS.Designer.cs">
+      <DependentUpon>EVENTOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCloneUserProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EVENTOS.resx">
+      <DependentUpon>EVENTOS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCloneUserProfile.resx">
       <DependentUpon>frmCloneUserProfile.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,6 +265,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\file-add_1144791.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cocktail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cocktail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cocktail2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

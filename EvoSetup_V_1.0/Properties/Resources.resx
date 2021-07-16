@@ -124,20 +124,23 @@
   <data name="adduser_añadir_3553" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\adduser_añadir_3553.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="seo-social-web-network-internet_340_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seo-social-web-network-internet_340_icon-icons.com_61497.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="file-add_114479" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file-add_114479.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cocktail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cocktail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1486395885-plus_806051" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1486395885-plus_806051.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1486485588-add-create-new-math-sign-cross-plus_81186" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1486485588-add-create-new-math-sign-cross-plus_81186.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="plus-black-symbol_icon-icons.com_73453" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus-black-symbol_icon-icons.com_73453.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1486485588-add-create-new-math-sign-cross-plus_811863" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1486485588-add-create-new-math-sign-cross-plus_811862.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cocktail1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cocktail1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="android-search_icon-icons.com_50501" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\android-search_icon-icons.com_50501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,8 +148,8 @@
   <data name="xmag_search_find_export_locate_5984" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\xmag_search_find_export_locate_5984.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="plus_insert_add_new_icon_181537" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus_insert_add_new_icon_181537.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1486485557-add-create-new-more-plus_81188" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486485557-add-create-new-more-plus_81188.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="find_search_locate_6312" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\find_search_locate_6312.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,14 +157,20 @@
   <data name="document_add_256_icon-icons.com_75994" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\document_add_256_icon-icons.com_75994.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="plus-black-symbol_icon-icons.com_73453" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus-black-symbol_icon-icons.com_73453.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1486485588-add-create-new-math-sign-cross-plus_81186" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486485588-add-create-new-math-sign-cross-plus_81186.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seo-social-web-network-internet_340_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seo-social-web-network-internet_340_icon-icons.com_61497.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file-add_1144791" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file-add_1144791.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1486485588-add-create-new-math-sign-cross-plus_811862" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1486485588-add-create-new-math-sign-cross-plus_811861.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1486485557-add-create-new-more-plus_81188" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1486485557-add-create-new-more-plus_81188.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="plus_insert_add_new_icon_181537" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_insert_add_new_icon_181537.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1486395885-plus_80605" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1486395885-plus_80605.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,7 +178,7 @@
   <data name="1486485588-add-create-new-math-sign-cross-plus_811861" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1486485588-add-create-new-math-sign-cross-plus_81186.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file-add_1144791" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file-add_1144791.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cocktail2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cocktail2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
